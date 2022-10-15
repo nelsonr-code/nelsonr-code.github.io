@@ -8,43 +8,393 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Nelson Rivas | Fullstack Developer</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <!-- header section starts -->
-  <header>
-    <div class="profile">
-      <img src="./assets/images/me.jpg">
-      <h3 class="name">Nelson Rivas</h3>
-      <p class="header-role">Fullstack Developer</p>
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="header-left">
+    <nav class="nav bd-grid">
+      <div class="nav__toggle" id="nav-toggle">
+        <!-- <img src="" alt=""> -->
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <div>
+        <a href="#" class="nav__logo">Nelson</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+          <!-- <img src="./assets/icons/close_small.svg" alt="close button"> -->
+        </div>
+        <div class="nav__user">
+          <img src="./assets/images/me.jpg" alt="">
+          <h3 class="name">Nelson Rivas</h3>
+          <p class="role">Fullstack Developer</p>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <div id="menu" class="fas fa-bars"></div>
   <!-- header section ends -->
-  <section class="about">
-    <div class="content">
-      <h3 class="intro">Hi there!</h3>
-      <h1 class="name">Nelson Rivas</h1>
-      <p class="about-content__role">I'm a Fullstack Developer</p>
-    </div>
-  </section>
-  <section class="projects">
-    <div class="content">
-    </div>
-  </section>
-  <section class="contact">
-    <div class="content">
-    </div>
-  </section>
+  <main class="left-main">
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home__container bd-grid">
+        <!-- <h2 class="home__title"><span>About</span> me</h2> -->
+        <div class="home__data">
+          <div class="home__data-text">
+            <h3 class="home__greeting">Hi there!</h3>
+            <h1 class="home__name">I'M <span>Nelson Rivas</span></h1>
+            <!-- <span class="home__role">I'm a Fullstack Developer</span> -->
+            <p class="home__presentation text-justified">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, esse laborum sequi culpa rem tempore
+              itaque enim corrupti facilis sapiente pariatur ut eos minus assumenda amet modi, repudiandae harum nobis.
+            </p>
+          </div>
+          <div class="home__data--btn">
+            <a download href="./assets/pdf/CV - Nelson Rivas Fullstack Developer.pdf" class="button home__btn">Download
+              CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="aboutme section" id="aboutme">
+      <span class="section-subtitle">My intro</span>
+      <h2 class="section-title">ABOUT ME</h2>
+
+      <div class="aboutme__container bd-grid">
+        <div class="aboutme__data">
+          <p class="aboutme__description text-justified">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum debitis illum impedit odio optio
+            eaque, esse incidunt id quas libero natus eveniet corporis molestias ad recusandae rem dolorem! Asperiores!
+          </p>
+        </div>
+
+        <div class="aboutme__information">
+          <h3 class="aboutme__information-title">Information</h3>
+
+          <div class="aboutme__information-data">
+            <i class="bx bx-envelope aboutme__information-icon"></i>
+            <span>contact@nelsonrivas.me</span>
+          </div>
+
+          <div class="aboutme__information-data">
+            <i class="bx bxl-whatsapp aboutme__information-icon"></i>
+            <span>+57 3108931061</span>
+          </div>
+
+          <div class="aboutme__information-data">
+            <i class="bx bx-current-location aboutme__information-icon"></i>
+            <span>Caracas, Venezuela</span>
+          </div>
+        </div>
+
+        <div class="aboutme__information">
+          <h3 class="aboutme__information-title">Skills</h3>
+          <div class="skills__container">
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/javascript.svg" alt="JavaScript skills">
+              </div>
+
+              <small class="skills__name">JavaScript</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/nodejs.svg" alt="">
+              </div>
+
+              <small class="skills__name">NodeJS</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/react.svg" alt="">
+              </div>
+
+              <small class="skills__name">ReactJS</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/mongodb.svg" alt="">
+              </div>
+
+              <small class="skills__name">MongoDB</small>
+            </div>
+            <!-- <span><img src="./assets/icons/javascript48.png" alt=""></span> -->
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/csharp.svg" alt="">
+              </div>
+
+              <small class="skills__name">CSharp</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/netframework.svg" alt="">
+              </div>
+
+              <small class="skills__name">.NET Framework</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/dotnet.svg" alt="">
+              </div>
+
+              <small class="skills__name">Dotnet</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/git.svg" alt="">
+              </div>
+
+              <small class="skills__name">GIT</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/html.svg" alt="">
+              </div>
+
+              <small class="skills__name">HTML</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/css.svg" alt="">
+              </div>
+
+              <small class="skills__name">CSS</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/bootstrap.svg" alt="">
+              </div>
+
+              <small class="skills__name">Bootstrap</small>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./assets/icons/jquery.svg" alt="">
+              </div>
+
+              <small class="skills__name">JQuery</small>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section container" id="projects">
+      <span class="section-subtitle">My portfolio</span>
+      <h2 class="section-title">Projects</h2>
+
+      <ul class="filters__projects">
+        <button class="filter__projects-button filter-tab-active" data-target="#works">
+          Works
+        </button>
+        <button class="filter__projects-button" data-target="#side-projects">
+          Personal
+        </button>
+      </ul>
+      <div class="filters__works">
+        <!-- WORKS -->
+        <div class="projects__content--work grid filters__active" data-content id="works">
+          <article class="works__card">
+            <img src="./assets/images/work1.jpg" alt="" class="works__img">
+
+            <div class="works__modal">
+              <div>
+                <span class="works__subtitle">ReactJS</span>
+                <h3 class="works__title">Masterblog</h3>
+                <a href="#" class="works__button button button__small">
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="works__card">
+            <img src="./assets/images/work2.jpg" alt="" class="works__img">
+
+            <div class="works__modal">
+              <div>
+                <span class="works__subtitle">Frontend</span>
+                <h3 class="works__title">Diagnóstico LinkedIn</h3>
+                <a href="#" class="works__button button button__small">
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="works__card">
+            <img src="./assets/images/work3.jpg" alt="" class="works__img">
+
+            <div class="works__modal">
+              <div>
+                <span class="works__subtitle">Category</span>
+                <h3 class="works__title">Name Project</h3>
+                <a href="#" class="works__button button button__small">
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="works__card">
+            <img src="./assets/images/work4.jpg" alt="" class="works__img">
+
+            <div class="works__modal">
+              <div>
+                <span class="works__subtitle">Category</span>
+                <h3 class="works__title">Name project</h3>
+                <a href="#" class="works__button button button__small">
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- SIDE PROJECTS -->
+        <div class="side-projects__content grid" data-content id="side-projects">
+
+        </div>
+      </div>
+
+      <div class="projects__container bd-grid">
+        <div class="projects__cards">
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section class="contact section" id="contact">
+      <span class="section-subtitle">Contact me</span>
+      <h2 class="section-title">Get it touch</h2>
+
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <h3 class="contact__title">Talk to me</h3>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="bx bx-mail-send contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">jobs@nelsonrivas.me</span>
+
+              <a href="mailto:jobs@nelsonrivas.me" target="_blank" class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="bx bxl-whatsapp contact__card-icon"></i>
+              <h3 class="contact__card-title">WhatsApp</h3>
+              <span class="contact__card-data">+57 310 8931061</span>
+
+              <a href="https://web.whatsapp.com/send?phone=573108931061&text=Hello, more information!" target="_blank"
+                class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class='bx bxl-linkedin-square contact__card-icon'></i>
+              <!-- <i class='bx bxl-linkedin contact__card-icon'></i> -->
+              <h3 class="contact__card-title">LinkedIn</h3>
+              <span class="contact__card-data">Nelson Rivas</span>
+
+              <a href="https://www.linkedin.com/in/nelson-alejandro-rivas-fullstack-developer" target="_blank"
+                class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <h3 class="contact__title">Write me your project</h3>
+
+          <form action="" class="contact__form">
+            <div class="contact__form-wrapper">
+              <label for="name" class="contact__form-tag">Names</label>
+              <input type="text" placeholder="Write your name" class="contact__form-input" id="name">
+            </div>
+
+            <div class="contact__form-wrapper">
+              <label for="email" class="contact__form-tag">Email</label>
+              <input type="text" placeholder="Insert your email" class="contact__form-input" id="email">
+            </div>
+
+            <div class="contact__form-wrapper contact__form-text">
+              <!-- <label for="form-text" class="contact__form-tag"></label> -->
+              <textarea name="" id="form-text" cols="30" rows="10" placeholder="Write your project"
+                class="contact__form-input"></textarea>
+            </div>
+
+            <button class="button">Send message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <h1 class="footer__title">Nelson</h1>
+        <p class="footer__description">I am Nelson and this my personal website, consult me here.</p>
+
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/nelson-alejandro-rivas-fullstack-developer" target="_blank"
+            class="footer__link">
+            <i class='bx bxl-linkedin-square'></i>
+          </a>
+          <a href="https://www.twitter.com/devasaservice" target="_blank" class="footer__link">
+            <i class='bx bxl-twitter'></i>
+          </a>
+          <a href="https://www.github.com/nelsonr-code" target="_blank" class="footer__link">
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+
+        <small class="footer__copy">All rights reserved by Nelson Rivas - 2022</small>
+      </div>
+    </footer>
+
+    <section class="contact">
+      <div class="content">
+      </div>
+    </section>
+  </main>
 
   <script src="./assets/js/main.js"></script>
 </body>
